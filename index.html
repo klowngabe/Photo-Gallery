@@ -1,0 +1,37 @@
+<!DOCTYPE html> <html><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Photo Gallery</title>
+<style>img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  border: 1px solid gray;
+}
+
+body {
+  font-family: 'Helvetica';
+}</style></head>
+    
+<body>
+  <h1>Photo Gallery</h1>
+  <div class="imageContainer">
+
+    </div>
+  <script src="script.js"></script>
+
+
+<script>
+/*__POPCODESTART__*/
+// Write a query selector that selects #imageContainer
+var imageContainer = document.querySelector(".imageContainer");
+console.log(imageContainer); // Add at least four (4) image urls to this array
+
+var imageUrls = ["https://pbs.twimg.com/media/FXa5IP2WQAA0I7U.png", "https://i.pinimg.com/originals/5c/5d/f0/5c5df098a2ca050c9508d8c3c9794386.jpg", "https://i.pinimg.com/736x/d5/01/b1/d501b10409f9669c7becb5886876b587--funny-faces-justin-bieber.jpg", "https://static.wikia.nocookie.net/superwhybettersite/images/e/e5/Super_Why_Official.jpg/revision/latest/scale-to-width-down/332?cb=20200501142652"]; // Write your for of loop using .insertAdjacentHTML below
+
+for (var _i = 0, _imageUrls = imageUrls; _i < _imageUrls.length; _i++) {
+  var image = _imageUrls[_i];
+  console.log(image);
+  imageContainer.insertAdjacentHTML("afterbegin", "<img= https://pbs.twimg.com/media/FXa5IP2WQAA0I7U.png>", "<img=https://i.pinimg.com/originals/5c/5d/f0/5c5df098a2ca050c9508d8c3c9794386.jpg>", "<img=https://i.pinimg.com/736x/d5/01/b1/d501b10409f9669c7becb5886876b587--funny-faces-justin-bieber.jpg>", "<img= https://static.wikia.nocookie.net/superwhybettersite/images/e/e5/Super_Why_Official.jpg/revision/latest/scale-to-width-down/332?cb=20200501142652>");
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbImltYWdlQ29udGFpbmVyIiwiZG9jdW1lbnQiLCJxdWVyeVNlbGVjdG9yIiwiY29uc29sZSIsImxvZyIsImltYWdlVXJscyIsImltYWdlIiwiaW5zZXJ0QWRqYWNlbnRIVE1MIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBLElBQUlBLGNBQWMsR0FBRUMsUUFBUSxDQUFDQyxhQUFULENBQXVCLGlCQUF2QixDQUFwQjtBQUNBQyxPQUFPLENBQUNDLEdBQVIsQ0FBWUosY0FBWixFLENBQ0E7O0FBQ0EsSUFBSUssU0FBUyxHQUFHLENBQ2hCLGlEQURnQixFQUNtQyw4RUFEbkMsRUFDbUgsb0dBRG5ILEVBQ3lOLG1KQUR6TixDQUFoQixDLENBSUE7O0FBQ0EsOEJBQWtCQSxTQUFsQixnQ0FBNkI7QUFBeEIsTUFBSUMsS0FBSyxpQkFBVDtBQUNMSCxFQUFBQSxPQUFPLENBQUNDLEdBQVIsQ0FBWUUsS0FBWjtBQUNJTixFQUFBQSxjQUFjLENBQUNPLGtCQUFmLENBQWtDLFlBQWxDLEVBQWdELHdEQUFoRCxFQUEwRyxvRkFBMUcsRUFBZ00sMEdBQWhNLEVBQTRTLDBKQUE1UztBQUNIIiwic291cmNlc0NvbnRlbnQiOlsiLy8gV3JpdGUgYSBxdWVyeSBzZWxlY3RvciB0aGF0IHNlbGVjdHMgI2ltYWdlQ29udGFpbmVyXG5sZXQgaW1hZ2VDb250YWluZXI9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuaW1hZ2VDb250YWluZXJcIik7XG5jb25zb2xlLmxvZyhpbWFnZUNvbnRhaW5lcik7XG4vLyBBZGQgYXQgbGVhc3QgZm91ciAoNCkgaW1hZ2UgdXJscyB0byB0aGlzIGFycmF5XG5sZXQgaW1hZ2VVcmxzID0gW1xuXCJodHRwczovL3Bicy50d2ltZy5jb20vbWVkaWEvRlhhNUlQMldRQUEwSTdVLnBuZ1wiLCBcImh0dHBzOi8vaS5waW5pbWcuY29tL29yaWdpbmFscy81Yy81ZC9mMC81YzVkZjA5OGEyY2EwNTBjOTUwOGQ4YzNjOTc5NDM4Ni5qcGdcIiwgXCJodHRwczovL2kucGluaW1nLmNvbS83MzZ4L2Q1LzAxL2IxL2Q1MDFiMTA0MDlmOTY2OWM3YmVjYjU4ODY4NzZiNTg3LS1mdW5ueS1mYWNlcy1qdXN0aW4tYmllYmVyLmpwZ1wiLCBcImh0dHBzOi8vc3RhdGljLndpa2lhLm5vY29va2llLm5ldC9zdXBlcndoeWJldHRlcnNpdGUvaW1hZ2VzL2UvZTUvU3VwZXJfV2h5X09mZmljaWFsLmpwZy9yZXZpc2lvbi9sYXRlc3Qvc2NhbGUtdG8td2lkdGgtZG93bi8zMzI/Y2I9MjAyMDA1MDExNDI2NTJcIlxuXTtcblxuLy8gV3JpdGUgeW91ciBmb3Igb2YgbG9vcCB1c2luZyAuaW5zZXJ0QWRqYWNlbnRIVE1MIGJlbG93XG5mb3IgKGxldCBpbWFnZSBvZiBpbWFnZVVybHMpIHtcbmNvbnNvbGUubG9nKGltYWdlKTtcbiAgICBpbWFnZUNvbnRhaW5lci5pbnNlcnRBZGphY2VudEhUTUwoXCJhZnRlcmJlZ2luXCIsIFwiPGltZz0gaHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0ZYYTVJUDJXUUFBMEk3VS5wbmc+XCIsIFwiPGltZz1odHRwczovL2kucGluaW1nLmNvbS9vcmlnaW5hbHMvNWMvNWQvZjAvNWM1ZGYwOThhMmNhMDUwYzk1MDhkOGMzYzk3OTQzODYuanBnPlwiLCBcIjxpbWc9aHR0cHM6Ly9pLnBpbmltZy5jb20vNzM2eC9kNS8wMS9iMS9kNTAxYjEwNDA5Zjk2NjljN2JlY2I1ODg2ODc2YjU4Ny0tZnVubnktZmFjZXMtanVzdGluLWJpZWJlci5qcGc+XCIsIFwiPGltZz0gaHR0cHM6Ly9zdGF0aWMud2lraWEubm9jb29raWUubmV0L3N1cGVyd2h5YmV0dGVyc2l0ZS9pbWFnZXMvZS9lNS9TdXBlcl9XaHlfT2ZmaWNpYWwuanBnL3JldmlzaW9uL2xhdGVzdC9zY2FsZS10by13aWR0aC1kb3duLzMzMj9jYj0yMDIwMDUwMTE0MjY1Mj5cIiApO1xufSJdfQ==</script></body></html>
